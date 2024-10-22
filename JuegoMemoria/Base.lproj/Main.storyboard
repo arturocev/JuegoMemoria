@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JuegoMemoria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUEGO DE MEMORIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqf-ys-rUC">
+                                <rect key="frame" x="100" y="114" width="214" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="HuZ-gg-Qcs"/>
+                                    <constraint firstAttribute="height" constant="26" id="vwq-Ey-oms"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
+                                <color key="textColor" red="0.76683937823834203" green="0.0092688425095655801" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="beM-oE-QYy">
+                                <rect key="frame" x="247" y="376" width="135" height="131"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="e1S-fh-XCW"/>
+                                    <constraint firstAttribute="height" constant="131" id="psI-h9-1T2"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es8-WF-v4p">
+                                <rect key="frame" x="183" y="777" width="49" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.01208707165" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oo5-aj-VrN"/>
+                                    <constraint firstAttribute="width" constant="49" id="rS3-Hb-cxV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="JUGAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xsg-tH-WO3">
+                                <rect key="frame" x="29" y="376" width="132" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="Ma3-HB-H83"/>
+                                    <constraint firstAttribute="width" constant="132" id="iQ9-IM-9zI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="132" id="igw-N7-cvi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="beM-oE-QYy" secondAttribute="bottom" constant="355" id="1qo-9R-ciL"/>
+                            <constraint firstItem="Wqf-ys-rUC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="1yk-he-nP1"/>
+                            <constraint firstItem="beM-oE-QYy" firstAttribute="leading" secondItem="Xsg-tH-WO3" secondAttribute="trailing" constant="86" id="Aml-Tg-Obb"/>
+                            <constraint firstItem="Xsg-tH-WO3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="Jof-OV-FeA"/>
+                            <constraint firstItem="es8-WF-v4p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="183" id="W8f-ez-KwW"/>
+                            <constraint firstItem="beM-oE-QYy" firstAttribute="top" secondItem="Wqf-ys-rUC" secondAttribute="bottom" constant="236" id="Xj3-Pa-Pma"/>
+                            <constraint firstItem="beM-oE-QYy" firstAttribute="leading" secondItem="Xsg-tH-WO3" secondAttribute="trailing" constant="86" id="Xzj-Yr-0x8"/>
+                            <constraint firstItem="Xsg-tH-WO3" firstAttribute="top" secondItem="Wqf-ys-rUC" secondAttribute="bottom" constant="236" id="ZNK-p5-dhk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="es8-WF-v4p" secondAttribute="bottom" constant="55" id="g31-46-vMF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="beM-oE-QYy" secondAttribute="trailing" constant="32" id="g31-lb-98N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="es8-WF-v4p" secondAttribute="trailing" constant="182" id="hmR-XW-cbF"/>
+                            <constraint firstItem="Wqf-ys-rUC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="mkF-gS-gje"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xsg-tH-WO3" secondAttribute="bottom" constant="355" id="nyL-GO-fkz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wqf-ys-rUC" secondAttribute="trailing" constant="100" id="s1b-uj-7kD"/>
+                            <constraint firstItem="Xsg-tH-WO3" firstAttribute="top" secondItem="Wqf-ys-rUC" secondAttribute="bottom" constant="236" id="smU-eX-RrL"/>
+                            <constraint firstItem="es8-WF-v4p" firstAttribute="top" secondItem="Wqf-ys-rUC" secondAttribute="bottom" constant="637" id="ykP-Xe-QzA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="botonJugarUI" destination="es8-WF-v4p" id="PGz-cb-O4S"/>
+                        <outlet property="imagen1UI" destination="Xsg-tH-WO3" id="DA6-JG-Omp"/>
+                        <outlet property="imagen2UI" destination="beM-oE-QYy" id="GD1-ih-Vq4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
