@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var imagen1UI: UIImageView!
@@ -15,10 +16,34 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let listaImagenes = [UIImage(named: "batido")]
-        imagen1UI.image = listaImagenes[0]
+        
+        var numeroRandom = 0
+        for i in 1...2 {
+            numeroRandom = insertarImagenes(listaImagenes: listaImagenes)
+            if imagen1UI.image != nil {
+                imagen2UI.image = listaImagenes[numeroRandom]
+                idImagen2 = numeroRandom
+            } else {
+                imagen1UI.image = listaImagenes[numeroRandom]
+                idImagen1 = numeroRandom
+            }
+        }
     }
-
     
+    @IBAction func jugarPulsado(_ sender: UIButton) {
+         comenzarJuego()
+    }
+    
+    
+    func insertarImagenes(listaImagenes: [UIImage?]) -> Int
+    {
+        var numeroRandom = Int.random(in: 0...3)
+        return numeroRandom
+    }
+    
+    func comenzarJuego() {
+        performSegue(withIdentifier: "Juego", sender: nil)
+    }
 }
+
 

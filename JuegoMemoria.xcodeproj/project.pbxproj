@@ -13,7 +13,8 @@
 		7144BE162CC7AD3F00809EF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7144BE142CC7AD3F00809EF5 /* Main.storyboard */; };
 		7144BE182CC7AD4000809EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7144BE172CC7AD4000809EF5 /* Assets.xcassets */; };
 		7144BE1B2CC7AD4000809EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7144BE192CC7AD4000809EF5 /* LaunchScreen.storyboard */; };
-		7144BE242CC7AFE700809EF5 /* imagenes in Resources */ = {isa = PBXBuildFile; fileRef = 7144BE232CC7AFE700809EF5 /* imagenes */; };
+		71493E9E2CC8F48100750BCC /* Juego.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71493E9D2CC8F48100750BCC /* Juego.swift */; };
+		71493EA12CC8F49500750BCC /* VariablesGlobales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71493EA02CC8F49500750BCC /* VariablesGlobales.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +26,8 @@
 		7144BE172CC7AD4000809EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7144BE1A2CC7AD4000809EF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7144BE1C2CC7AD4000809EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7144BE232CC7AFE700809EF5 /* imagenes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = imagenes; path = ../../imagenes; sourceTree = "<group>"; };
-		7144BE272CC7B50700809EF5 /* patata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = patata.png; sourceTree = "<group>"; };
-		7144BE282CC7B50700809EF5 /* batido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batido.png; sourceTree = "<group>"; };
-		7144BE292CC7B50700809EF5 /* sandwich.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandwich.png; sourceTree = "<group>"; };
-		7144BE2A2CC7B50700809EF5 /* queso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = queso.png; sourceTree = "<group>"; };
+		71493E9D2CC8F48100750BCC /* Juego.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juego.swift; sourceTree = "<group>"; };
+		71493EA02CC8F49500750BCC /* VariablesGlobales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariablesGlobales.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +44,6 @@
 		7144BE022CC7AD3F00809EF5 = {
 			isa = PBXGroup;
 			children = (
-				7144BE232CC7AFE700809EF5 /* imagenes */,
 				7144BE0D2CC7AD3F00809EF5 /* JuegoMemoria */,
 				7144BE0C2CC7AD3F00809EF5 /* Products */,
 			);
@@ -68,22 +65,12 @@
 				7144BE122CC7AD3F00809EF5 /* ViewController.swift */,
 				7144BE142CC7AD3F00809EF5 /* Main.storyboard */,
 				7144BE172CC7AD4000809EF5 /* Assets.xcassets */,
-				7144BE262CC7B50700809EF5 /* imagenes */,
 				7144BE192CC7AD4000809EF5 /* LaunchScreen.storyboard */,
 				7144BE1C2CC7AD4000809EF5 /* Info.plist */,
+				71493E9D2CC8F48100750BCC /* Juego.swift */,
+				71493EA02CC8F49500750BCC /* VariablesGlobales.swift */,
 			);
 			path = JuegoMemoria;
-			sourceTree = "<group>";
-		};
-		7144BE262CC7B50700809EF5 /* imagenes */ = {
-			isa = PBXGroup;
-			children = (
-				7144BE272CC7B50700809EF5 /* patata.png */,
-				7144BE282CC7B50700809EF5 /* batido.png */,
-				7144BE292CC7B50700809EF5 /* sandwich.png */,
-				7144BE2A2CC7B50700809EF5 /* queso.png */,
-			);
-			path = imagenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +131,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7144BE1B2CC7AD4000809EF5 /* LaunchScreen.storyboard in Resources */,
-				7144BE242CC7AFE700809EF5 /* imagenes in Resources */,
 				7144BE182CC7AD4000809EF5 /* Assets.xcassets in Resources */,
 				7144BE162CC7AD3F00809EF5 /* Main.storyboard in Resources */,
 			);
@@ -157,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71493E9E2CC8F48100750BCC /* Juego.swift in Sources */,
+				71493EA12CC8F49500750BCC /* VariablesGlobales.swift in Sources */,
 				7144BE132CC7AD3F00809EF5 /* ViewController.swift in Sources */,
 				7144BE0F2CC7AD3F00809EF5 /* AppDelegate.swift in Sources */,
 				7144BE112CC7AD3F00809EF5 /* SceneDelegate.swift in Sources */,
