@@ -20,14 +20,20 @@ class Juego: UIViewController {
     @IBOutlet weak var botonImg2: UIButton!
     @IBOutlet weak var botonImg3: UIButton!
     @IBOutlet weak var botonImg4: UIButton!
+    @IBOutlet weak var botonPuntuacion: UIButton!
+    var botonPulsado = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //ADICIÓN DE IMÁGENES EN LAS IMAGEVIEWS
         imagen1UI.image = listaImagenes[0]
         imagen2UI.image = listaImagenes[1]
         imagen3UI.image = listaImagenes[2]
         imagen4UI.image = listaImagenes[3]
+        
+        
+        inicio()
     }
     
     
@@ -36,6 +42,30 @@ class Juego: UIViewController {
             puntuaciónTotal += 20
         } else {
             puntuaciónTotal -= 7
+        }
+        botonPulsado += 1
+        finPartida()
+    }
+    
+    func inicio() {
+        botonPuntuacion.isEnabled = false
+        botonPuntuacion.alpha = 0.6
+    }
+    
+    func finPartida() {
+        if botonPulsado == 2{
+            botonImg1.isEnabled = false
+            botonImg2.isEnabled = false
+            botonImg3.isEnabled = false
+            botonImg4.isEnabled = false
+            
+            imagen1UI.alpha = 0.6
+            imagen2UI.alpha = 0.6
+            imagen3UI.alpha = 0.6
+            imagen4UI.alpha = 0.6
+            
+            botonPuntuacion.isEnabled = true
+            botonPuntuacion.alpha = 1
         }
     }
 }
