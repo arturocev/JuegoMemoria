@@ -53,6 +53,34 @@
                                 <color key="textColor" red="0.76683937820000003" green="0.0092688425099999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="3JH-ob-JYU">
+                                <rect key="frame" x="42" y="496" width="137" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="AdivinarImagen:" destination="52r-0g-CKd" eventType="touchUpInside" id="m9c-nE-iua"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="flf-8m-cXR">
+                                <rect key="frame" x="240" y="496" width="137" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="AdivinarImagen:" destination="52r-0g-CKd" eventType="touchUpInside" id="2gQ-1o-GO5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="WFM-fK-iII">
+                                <rect key="frame" x="42" y="207" width="137" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="AdivinarImagen:" destination="52r-0g-CKd" eventType="touchUpInside" id="fgK-Da-ETr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-X0-4yv">
+                                <rect key="frame" x="240" y="207" width="137" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="AdivinarImagen:" destination="52r-0g-CKd" eventType="touchUpInside" id="TQn-NI-HOf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Oos-rg-ADB"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -77,6 +105,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="EOx-n8-II9"/>
                     <connections>
+                        <outlet property="botonImg1" destination="WFM-fK-iII" id="wTi-Pb-IsR"/>
+                        <outlet property="botonImg2" destination="2cd-X0-4yv" id="WBE-iZ-Gvl"/>
+                        <outlet property="botonImg3" destination="3JH-ob-JYU" id="yfJ-mk-apx"/>
+                        <outlet property="botonImg4" destination="flf-8m-cXR" id="s6q-Ba-fou"/>
                         <outlet property="imagen1UI" destination="0Xz-3o-Fr5" id="wfS-Xk-im8"/>
                         <outlet property="imagen2UI" destination="Bg7-ra-QRI" id="aLx-uT-hgS"/>
                         <outlet property="imagen3UI" destination="q6Y-wc-m7b" id="foL-zv-EfT"/>
@@ -85,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38c-m0-lMh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1294" y="94"/>
+            <point key="canvasLocation" x="1292.753623188406" y="93.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
