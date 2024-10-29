@@ -15,6 +15,7 @@
 		7144BE1B2CC7AD4000809EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7144BE192CC7AD4000809EF5 /* LaunchScreen.storyboard */; };
 		71493E9E2CC8F48100750BCC /* Juego.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71493E9D2CC8F48100750BCC /* Juego.swift */; };
 		71493EA12CC8F49500750BCC /* VariablesGlobales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71493EA02CC8F49500750BCC /* VariablesGlobales.swift */; };
+		71AF01812CD0EAE90057E268 /* Puntuacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF01802CD0EAE90057E268 /* Puntuacion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7144BE1C2CC7AD4000809EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71493E9D2CC8F48100750BCC /* Juego.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juego.swift; sourceTree = "<group>"; };
 		71493EA02CC8F49500750BCC /* VariablesGlobales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariablesGlobales.swift; sourceTree = "<group>"; };
+		71AF01802CD0EAE90057E268 /* Puntuacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puntuacion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				7144BE102CC7AD3F00809EF5 /* SceneDelegate.swift */,
 				7144BE122CC7AD3F00809EF5 /* ViewController.swift */,
 				7144BE142CC7AD3F00809EF5 /* Main.storyboard */,
+				71AF01802CD0EAE90057E268 /* Puntuacion.swift */,
 				7144BE172CC7AD4000809EF5 /* Assets.xcassets */,
 				7144BE192CC7AD4000809EF5 /* LaunchScreen.storyboard */,
 				7144BE1C2CC7AD4000809EF5 /* Info.plist */,
@@ -148,6 +151,7 @@
 				7144BE132CC7AD3F00809EF5 /* ViewController.swift in Sources */,
 				7144BE0F2CC7AD3F00809EF5 /* AppDelegate.swift in Sources */,
 				7144BE112CC7AD3F00809EF5 /* SceneDelegate.swift in Sources */,
+				71AF01812CD0EAE90057E268 /* Puntuacion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
