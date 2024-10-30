@@ -10,10 +10,14 @@ import UIKit
 
 class Juego: UIViewController {
     //REFERENCIAS IMÁGENES
+    
     @IBOutlet weak var imagen1UI: UIImageView!
     @IBOutlet weak var imagen2UI: UIImageView!
     @IBOutlet weak var imagen3UI: UIImageView!
     @IBOutlet weak var imagen4UI: UIImageView!
+    
+    //REFERENCIA TEXTFIELD
+    @IBOutlet weak var ingresarNombre: UITextField!
     
     //REFERENCIAS BOTONES
     @IBOutlet weak var botonImg1: UIButton!
@@ -21,9 +25,12 @@ class Juego: UIViewController {
     @IBOutlet weak var botonImg3: UIButton!
     @IBOutlet weak var botonImg4: UIButton!
     @IBOutlet weak var botonPuntuacion: UIButton!
-    var botonPulsado = 0
     
-    override func viewDidLoad() {
+    var botonPulsado = 0
+    var puntuacionTotal = 0
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         //ADICIÓN DE IMÁGENES EN LAS IMAGEVIEWS
@@ -32,28 +39,37 @@ class Juego: UIViewController {
         imagen3UI.image = listaImagenes[2]
         imagen4UI.image = listaImagenes[3]
         
-        
         inicio()
+
     }
     
     
     @IBAction func AdivinarImagen(_ sender: UIButton) {
+        
         if idImagen1 == sender.tag || idImagen2 == sender.tag {
-            puntuaciónTotal += 20
+            puntuacionTotal += 25
+            sender.isEnabled = false
+            
         } else {
-            puntuaciónTotal -= 7
+            puntuacionTotal -= 20
         }
+        
         botonPulsado += 1
         finPartida()
     }
     
     func inicio() {
+        
         botonPuntuacion.isEnabled = false
         botonPuntuacion.alpha = 0.6
+        
     }
     
     func finPartida() {
-        if botonPulsado == 2{
+        
+        if botonPulsado >= 2 {
+            
+            
             botonImg1.isEnabled = false
             botonImg2.isEnabled = false
             botonImg3.isEnabled = false
@@ -66,6 +82,29 @@ class Juego: UIViewController {
             
             botonPuntuacion.isEnabled = true
             botonPuntuacion.alpha = 1
+            
+            puntuacionActual = String(puntuacionTotal)
+            puntuaciones.insert(puntuacionActual, at: 0)
+            
+        }
+    }
+    
+    @IBAction func verPuntuacionPulsado(_ sender: Any) {
+        comprobarNombre()
+        ingresarNombre.text
+        verPuntuacion()
+    }
+    
+    func verPuntuacion() {
+        performSegue(withIdentifier: "Puntuacion", sender: nil)
+    }
+    
+    func comprobarNombre() {
+        if ingresarNombre.text == nil {
+            ingresarNombre.placeholder = "Por favor, escribe tu nombre..."
+            
+        } else if !ingresarNombre.text?.first?.isNumber {
+            
         }
     }
 }

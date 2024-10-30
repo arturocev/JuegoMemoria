@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7105EDA42CD246C2008B0EFE /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7105EDA32CD246C2008B0EFE /* Usuario.swift */; };
 		7144BE0F2CC7AD3F00809EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7144BE0E2CC7AD3F00809EF5 /* AppDelegate.swift */; };
 		7144BE112CC7AD3F00809EF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7144BE102CC7AD3F00809EF5 /* SceneDelegate.swift */; };
 		7144BE132CC7AD3F00809EF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7144BE122CC7AD3F00809EF5 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7105EDA32CD246C2008B0EFE /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		7144BE0B2CC7AD3F00809EF5 /* JuegoMemoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuegoMemoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7144BE0E2CC7AD3F00809EF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7144BE102CC7AD3F00809EF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				7144BE102CC7AD3F00809EF5 /* SceneDelegate.swift */,
 				7144BE122CC7AD3F00809EF5 /* ViewController.swift */,
 				7144BE142CC7AD3F00809EF5 /* Main.storyboard */,
+				7105EDA32CD246C2008B0EFE /* Usuario.swift */,
 				71AF01802CD0EAE90057E268 /* Puntuacion.swift */,
 				7144BE172CC7AD4000809EF5 /* Assets.xcassets */,
 				7144BE192CC7AD4000809EF5 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			files = (
 				71493E9E2CC8F48100750BCC /* Juego.swift in Sources */,
 				71493EA12CC8F49500750BCC /* VariablesGlobales.swift in Sources */,
+				7105EDA42CD246C2008B0EFE /* Usuario.swift in Sources */,
 				7144BE132CC7AD3F00809EF5 /* ViewController.swift in Sources */,
 				7144BE0F2CC7AD3F00809EF5 /* AppDelegate.swift in Sources */,
 				7144BE112CC7AD3F00809EF5 /* SceneDelegate.swift in Sources */,

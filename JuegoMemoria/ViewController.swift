@@ -17,17 +17,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var numeroRandom = 0
-        for i in 1...2 {
-            numeroRandom = insertarImagenes(listaImagenes: listaImagenes)
-            if imagen1UI.image != nil {
-                imagen2UI.image = listaImagenes[numeroRandom]
-                idImagen2 = numeroRandom
-            } else {
-                imagen1UI.image = listaImagenes[numeroRandom]
-                idImagen1 = numeroRandom
-            }
+        
+        var numeroRandom = insertarImagenes(listaImagenes: listaImagenes)
+        var numeroRandom2 = insertarImagenes(listaImagenes: listaImagenes)
+        
+        imagen1UI.image = listaImagenes[numeroRandom]
+        idImagen1 = numeroRandom
+        
+        while numeroRandom == numeroRandom2 {
+            numeroRandom2 = Int.random(in: 0...3)
         }
+        
+        imagen2UI.image = listaImagenes[numeroRandom2]
+        idImagen2 = numeroRandom2
     }
     
     @IBAction func jugarPulsado(_ sender: UIButton) {
